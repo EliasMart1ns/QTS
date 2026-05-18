@@ -18,4 +18,22 @@ const { parOuimpar } = require('./script');
 
 test('Par ou impar', () =>{
   expect(parOuimpar(4)).toBe("Par");
-})
+});
+
+const { votar } = require('./script');
+
+test('Votar', ()=>{
+  expect(votar(15)).toBe("Não pode votar");
+});
+
+const { numero } = requise('./script');
+
+test('numero', ()=>{
+  expect(numero(5)).toBe("positivo");
+});
+
+const { bonus } = requise('./script');
+
+test('bonus', ()=>{
+  expect(bonus(1000)).toBe(200);
+});
