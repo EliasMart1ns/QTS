@@ -7,3 +7,15 @@ test('soma dois números', () => {
 test('mensagem de boas vindas', () => {
   expect(mensagemBoasVindas('Diogo')).toBe('Olá, Diogo!');
 });
+
+const { maiornumero } = require('./script');
+
+test('maior numero:', () => {
+  expect(maiornumero(10,5)).toBe(10);
+});
+
+const { parOuimpar } = require('./script');
+
+test('Par ou impar', () =>{
+  expect(parOuimpar(4)).toBe("Par");
+})
